@@ -11,7 +11,7 @@ You'll need to edit the following in the LoginPageRenderer class of both the iOS
         authorizeUrl: new Uri (""), // the auth URL for the service
         redirectUrl: new Uri ("")); // the redirect URL for the service
         
-Could this have been put in a common place so as not to be dupplicated in both files? Yeah, probably.
+Could this have been put in a common place so as not to be duplicated in both files? Yeah, probably.
 
 ### What you get:
 
