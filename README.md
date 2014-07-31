@@ -7,10 +7,10 @@ You'll need to edit the following in the App.cs in order to get the sample worki
 
     _Instance.OAuthSettings = 
         new OAuthSettings (
-            clientId: "",  // your OAuth2 client id 
-            scope: "",  // The scopes for the particular API you're accessing. The format for this will vary by API.
-            authorizeUrl: "",  // the auth URL for the service
-            redirectUrl: ""); // the redirect URL for the service
+            clientId: "",       // your OAuth2 client id 
+            scope: "",          // The scopes for the particular API you're accessing. The format for this will vary by API.
+            authorizeUrl: "",   // the auth URL for the service
+            redirectUrl: "");   // the redirect URL for the service
 
 ### What you get:
 
