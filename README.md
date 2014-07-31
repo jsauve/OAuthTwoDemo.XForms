@@ -11,6 +11,9 @@ You'll need to edit the following in the App.cs in order to get the sample worki
             scope: "",          // The scopes for the particular API you're accessing. The format for this will vary by API.
             authorizeUrl: "",   // the auth URL for the service
             redirectUrl: "");   // the redirect URL for the service
+            
+            // If you'd like to know more about how to integrate with an OAuth provider, 
+            // I personally like the Instagram API docs: http://instagram.com/developer/authentication/
 
 ### What you get:
 
