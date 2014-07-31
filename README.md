@@ -2,7 +2,7 @@
 
 This demo does not cover pulling back any profile data (or any other data) from your given auth provider's API (Facebook, Instagram, Twitter, Google, etc, etc, etc), but it will get you authenticated. After successful authentication, it's up to you to make subsequent calls against your chosen API with the auth token you receive.
 
-### Edit the two LoginPageRenderer classes
+### Edit the App.cs class in the core project:
 You'll need to edit the following in the App.cs in order to get it to work with your OAuth provider:
 
     var auth = new OAuth2Authenticator (
