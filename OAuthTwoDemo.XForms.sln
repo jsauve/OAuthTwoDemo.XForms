@@ -76,6 +76,6 @@ Global
 		{DB13498B-2EBE-4F01-B6D6-B2E455443F59}.StageTestFlightDebug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Android\OAuthTwoDemo.XForms.Android.csproj
+		StartupItem = iOS\OAuthTwoDemo.XForms.iOS.csproj
 	EndGlobalSection
 EndGlobal

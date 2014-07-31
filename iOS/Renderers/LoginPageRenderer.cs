@@ -16,12 +16,13 @@ namespace OAuthTwoDemo.XForms.iOS
 			base.ViewDidAppear (animated);
 
 			var auth = new OAuth2Authenticator (
-				clientId: "", // your OAuth2 client id
-				scope: "", // the scopes for the particular API you're accessing, delimited by "+" symbols
-				authorizeUrl: new Uri (""), // the auth URL for the service
-				redirectUrl: new Uri ("")); // the redirect URL for the service
+				clientId: App.Instance.OAuthSettings.ClientId, // your OAuth2 client id
+				scope: App.Instance.OAuthSettings.Scope, // The scopes for the particular API you're accessing. The format for this will vary by API.
+				authorizeUrl: new Uri (App.Instance.OAuthSettings.AuthorizeUrl), // the auth URL for the service
+				redirectUrl: new Uri (App.Instance.OAuthSettings.RedirectUrl)); // the redirect URL for the service
 
-				// if you're looking for more info on OAuth2, I like how Instagram's docs describe it: http://instagram.com/developer/authentication/
+				
+				
 
 			auth.Completed += (sender, eventArgs) => {
 				// We presented the UI, so it's up to us to dimiss it on iOS.

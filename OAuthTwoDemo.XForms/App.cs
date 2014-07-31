@@ -16,14 +16,23 @@ namespace OAuthTwoDemo.XForms
 				{
 					lock (_SyncRoot) 
 					{
-						if (_Instance == null) 
-							_Instance = new App();
+						if (_Instance == null) {
+							_Instance = new App ();
+							_Instance.OAuthSettings = 
+								new OAuthSettings (
+									clientId: "3b523a97d57e428488da56ad80789119",  // your OAuth2 client id 
+									scope: "basic",  // The scopes for the particular API you're accessing. The format o this will vary by API.
+									authorizeUrl: "https://instagram.com/oauth/authorize",  // the auth URL for the service
+									redirectUrl: "http://www.joesauve.com/using-xamarin-auth-with-xamarin-forms/"); // the redirect URL for the service
+						}
 					}
 				}
 
 				return _Instance;
 			}
 		}
+
+		public OAuthSettings OAuthSettings { get; private set; }
 
 		NavigationPage _NavPage;
 
