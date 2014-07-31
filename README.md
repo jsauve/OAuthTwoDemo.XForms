@@ -5,11 +5,12 @@ This demo does not cover pulling back any profile data (or any other data) from 
 ### Edit the App.cs class in the core project:
 You'll need to edit the following in the App.cs in order to get it to work with your OAuth provider:
 
-    var auth = new OAuth2Authenticator (
-        clientId: "", // your OAuth2 client id
-        scope: "", // the scopes for the particular API you're accessing, delimited by "+" symbols
-        authorizeUrl: new Uri (""), // the auth URL for the service
-        redirectUrl: new Uri ("")); // the redirect URL for the service
+    _Instance.OAuthSettings = 
+        new OAuthSettings (
+            clientId: "",  // your OAuth2 client id 
+            scope: "",  // The scopes for the particular API you're accessing. The format for this will vary by API.
+            authorizeUrl: "",  // the auth URL for the service
+            redirectUrl: ""); // the redirect URL for the service
 
 ### What you get:
 
