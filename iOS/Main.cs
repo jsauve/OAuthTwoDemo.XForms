@@ -1,4 +1,4 @@
-﻿using MonoTouch.UIKit;
+using MonoTouch.UIKit;
 
 namespace OAuthTwoDemo.XForms.iOS
 {
@@ -13,4 +13,3 @@ namespace OAuthTwoDemo.XForms.iOS
 		}
 	}
 }
-
